@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title text-color="aqua">Temperature Converter</title>
+    <style>
+        body {
+            background-color: #575787;
+        }
+        .main {
+    padding: 20px;
+}
+        }
+        h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+     padding:20px;
+
+}
+           input, select {
+    border: 1px solid #ccc;
+}
+        }
+        select {
+            width: 200px;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+
+
+    &:hover {
+        background-color: #0069d9;
+    }
+}
+        }
+        input[type="submit"]:hover, button:hover {
+            background-color: #0069d9;
+        }
+    </style>
+</head>
+<body>
+<h1>Temperature Converter</h1>
+<div class="main">
+    <label for="temp">Enter temperature:</label>
+    <input type="text" id="temp" placeholder="0">
+    <select name="unit" id="unit">
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="Celsius">Celsius</option>
+    </select>
+    <button onclick="convert()">Convert</button>
+    <input type="text" id="result" placeholder="0">
+</div>
+<script>
+function convert() {
+    var temp = document.getElementById("temp").value;
+    var unit = document.getElementById("unit").value;
+    var result;
+
+    if (unit == "Fahrenheit") {
+        result = (temp - 32) * 5 / 9+"\u00B0C";
+    } else {
+        result = (temp * 9 / 5) + 32+"\u00B0F";
+    }
+
+    document.getElementById("result").value = result;
+}
+</script>
+</body>
+</html>
