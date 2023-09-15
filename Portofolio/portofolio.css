@@ -1,0 +1,181 @@
+body {
+    margin: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    height: 60px;
+    background-color:#358787;
+
+    
+}
+
+ul {
+    display: flex;
+    justify-content:left;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+    margin: 20px;
+}
+
+button {
+    font-family:verdana;
+    font-size: 18px;
+    border-radius: 14px;
+    padding: 3.4px 11px;
+    background-color:#358787;
+    color: rgb(255, 255, 255);
+    border: none;
+    transition-duration: 0.23s;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color:#358787;
+}
+
+.intro {
+
+    height: 560px;
+    background-color:#358787;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.photo {
+    width:293px;
+    height: 490px;
+     position: absolute;
+     
+    top:5px;
+    right:20px;
+
+    filter: drop-shadow(5px 4px pink);
+
+}
+
+.wel_txt {
+    font-size: 60px;
+    font-family:"Audiowide", sans-serif;
+
+    color:pink;
+    height:70px;
+  
+    text-shadow: 2px 2px #4d3803;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+}
+
+.education {
+    font-family: "Trirong", serif;
+   height:350px;
+    background-color:#358787;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+h2 {
+    padding-top: 20px;
+    margin-left: 20px;
+    
+}
+
+h3 {
+    margin:10px 40px;
+}
+.projects{
+    font-family: "Trirong", serif;
+    background-color:#358787;
+     height:230px;
+    color: white;
+    margin: 10px;
+    border-radius:7px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.certification{
+    font-family: "Trirong", serif;
+    background-color:#358787;
+    height:230px;
+    color: white;
+    margin: 10px;
+    border-radius:7px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.contacts{
+    font-family: "Trirong", serif;
+    background-color:#789999;
+    height: 250px;
+    color: rgb(250, 243, 243);
+    margin: 10px;
+    border-radius:7px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        
+}
+h6{
+    height:25px;
+    color: white;
+    font-size: 23px;
+	margin:5px 20px;
+	padding-top:10px;
+  
+	border:0px;
+}
+h4{
+    margin-top:35px;
+	margin-left:40px;
+    font-size: 14px;
+    height:26px;
+}
+i{
+    margin-right:5px;
+}
+
+
+/*Media query */
+@media only screen and (max-width: 768px) {
+    body{
+        margin:5px;
+    }
+    header{
+        height:20px;
+    }
+    li{
+        margin:10px;
+    }
+    button{
+        font-size: 15px;
+    }
+    .intro {
+
+        height: 400px;
+        position: relative;
+
+    }
+    .photo {
+        width:183px;
+        height: 310px;
+        position:absolute;
+    }
+    .wel_txt{
+        font-size: 28px;
+        height:30px;
+        position:absolute;
+        left:20px;
+        top:82%;
+        margin:0px;
+    }
+    .education{
+        height:450px;
+    }
+    .projects{
+        height:370px;
+    }
+
+}
